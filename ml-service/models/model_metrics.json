@@ -1,0 +1,75 @@
+{
+  "model_name": "GradientBoostingRegressor",
+  "sample_count": 15000,
+  "test_sample_count": 3000,
+  "mae_minutes": 3.283,
+  "rmse_minutes": 4.38,
+  "r2_score": 0.9838,
+  "features_used": [
+    "distance_remaining_km",
+    "current_speed_kmh",
+    "speed_ratio",
+    "previous_delay_minutes",
+    "signal_stops_count",
+    "departure_hour",
+    "train_priority",
+    "day_of_week",
+    "weather_condition",
+    "track_congestion",
+    "train_number"
+  ],
+  "top_feature_importances": [
+    {
+      "feature": "signal_stops_count",
+      "importance": 0.3896
+    },
+    {
+      "feature": "previous_delay_minutes",
+      "importance": 0.2586
+    },
+    {
+      "feature": "current_speed_kmh",
+      "importance": 0.1379
+    },
+    {
+      "feature": "speed_ratio",
+      "importance": 0.0952
+    },
+    {
+      "feature": "distance_remaining_km",
+      "importance": 0.0472
+    },
+    {
+      "feature": "track_congestion_Peak Congestion",
+      "importance": 0.0187
+    },
+    {
+      "feature": "track_congestion_Low",
+      "importance": 0.013
+    },
+    {
+      "feature": "weather_condition_Clear",
+      "importance": 0.0095
+    },
+    {
+      "feature": "track_congestion_High",
+      "importance": 0.0062
+    },
+    {
+      "feature": "track_congestion_Medium",
+      "importance": 0.0058
+    }
+  ],
+  "comparison": {
+    "RandomForest": {
+      "mae": 4.279,
+      "rmse": 6.27,
+      "r2": 0.9668
+    },
+    "GradientBoosting": {
+      "mae": 3.283,
+      "rmse": 4.38,
+      "r2": 0.9838
+    }
+  }
+}
